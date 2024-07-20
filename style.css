@@ -1,0 +1,21 @@
+.table-game{
+  height: 300px;
+  width: 500px;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+.player{
+  height: 27px;
+  width: 27px;
+  background: green;
+  bottom: 0;
+  position: absolute;
+}
+.obstacle{
+  height: 70px;
+  width: 20px;
+  bottom: 0;
+  background-color: blue;
+  position: absolute;
+  right: 50px;
+}
