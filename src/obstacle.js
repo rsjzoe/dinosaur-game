@@ -17,7 +17,7 @@ export class Obstacle {
         clearInterval(interval);
       }
       // verification collision
-      if(player.bottom <= 70 && player.right == (this.right + 20)){
+      if(player.bottom <= 50 && player.right == (this.right + 58)){
         Obstacle.gameOver()
         console.log("collision");
       } 
@@ -37,7 +37,9 @@ export class Obstacle {
     tableGame.insertAdjacentHTML(
       "beforeend",
       `
-            <div class="obstacle o-${Obstacle.id}"></div>    
+            <div class="obstacle o-${Obstacle.id}">
+              <img src="hazo.png"/>
+            </div>    
         `
     );
     Obstacle.id++;
